@@ -24,7 +24,7 @@ export default async function handleSubscribe(req: NextApiRequest, res: NextApiR
           q.Casefold(session.user.email)
         )
       )
-    )
+    ) as User
 
     let customerId = user.data.stripe_customer_id;
 
