@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/pages/slice-simulator.tsx",
-    "prismicio.ts"
+    "src/services/prismicio.ts"
   ],
   "exclude": [
     "node_modules"
