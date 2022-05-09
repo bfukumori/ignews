@@ -99,9 +99,7 @@ The following tools were used in the construction of the project:
 
 #### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
 
-- **[ReactJS](https://reactjs.org/)**
 - **[NextJS](https://nextjs.org/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
 - **[SASS](https://sass-lang.com/)**
 - **[Next-Auth](https://next-auth.js.org/)**
 - **[Stripe](https://stripe.com/)**
