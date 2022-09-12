@@ -56,8 +56,8 @@ Project developed during the Ignite ReactJS course from [Rocketseat](https://www
 ### Pre-requisites
 
 Before you begin, you will need to have the following tools installed on your machine:
-[Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/), [Stripe CLI] (https://stripe.com/docs/stripe-cli)
-In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Stripe CLI](https://stripe.com/docs/stripe-cli)
+In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
 Create an account and configure these externals services:
 
