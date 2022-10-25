@@ -23,7 +23,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
   const router = useRouter();
 
   useEffect(() => {
-    if (session.user) {
+    if (session?.user) {
       router.push(`/posts/${post.slug}`);
     }
   }, [session, post.slug, router]);
