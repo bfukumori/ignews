@@ -1,13 +1,15 @@
-import { AppProps } from 'next/app';
-import { Header } from '../components/Header';
+import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
-
-import '../styles/global.scss';
 import { PrismicProvider } from '@prismicio/react';
+import type { Session } from 'next-auth';
+
+import { Header } from '../components/Header';
+import '../styles/global.scss';
 
 export default function MyApp({
   Component,
-  pageProps: { session, ...pageProps } }: AppProps) {
+  pageProps: { session, ...pageProps },
+}: AppProps<{ session: Session }>) {
   return (
     <PrismicProvider>
       <SessionProvider session={session}>
@@ -15,5 +17,5 @@ export default function MyApp({
         <Component {...pageProps} />
       </SessionProvider>
     </PrismicProvider>
-  )
+  );
 }
