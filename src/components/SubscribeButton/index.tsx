@@ -14,7 +14,7 @@ export function SubscribeButton() {
       return;
     }
 
-    if (session.activeSubscription) {
+    if (session.user) {
       router.push('/posts');
       return;
     }
@@ -26,7 +26,7 @@ export function SubscribeButton() {
 
       const stripe = await getStripeJs();
 
-      await stripe.redirectToCheckout({ sessionId })
+      await stripe.redirectToCheckout({ sessionId });
     } catch (err) {
       alert(err.message);
     }
@@ -34,11 +34,11 @@ export function SubscribeButton() {
 
   return (
     <button
-      type="button"
+      type='button'
       className={styles.subscribeButton}
       onClick={handleSubscribe}
     >
       Subscribe now
     </button>
-  )
+  );
 }
